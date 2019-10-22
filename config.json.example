@@ -1,0 +1,27 @@
+{
+    "global": {
+	"__overscan_comment": "The overscan variable contains the number of pixels of padding that should not be occupied by content around the border of the screen. Set this to 0 for a computer monitor. Set this to a small positive number (e.g. 40) on TV monitors that crop away the borders of the screen.",
+	"overscan": "0",
+	"__cameraRefreshDelay_comment": "The refreshDelay variable contains the number of seconds to wait between attempts to poll cameras for updated images. Set to a larger time interval to reduce CPU usage. Set to a smaller time interval to increase the framerate",
+	"cameraRefreshDelay": "0.5",
+	"__secondsBeforeBroken_comment": "The secondsBeforeBroken variable contains the number of seconds that a camera may not respond before it is considered broken. Set to a smaller number to alert viewers with a blue error image sooner. Set to a larger number to be more forgiving of temporary network outages or server slowness.",
+	"secondsBeforeBroken": "10",
+	"mode": "montage",
+	"__mode_comment": "mode may be either montage or cycle. In montage mode, the display shows all cameras at all times arrange in a grid. In cycle mode, the entire display shows a single large camera view, waits a constant amount of time, and then switches to the next camera.",
+	"cycleDelay": "3",
+	"__cycleDelay_comment": "cycleDelay is the number of seconds each camera will be displayed in cycle mode."
+    },
+    "cameras": [
+	{"username": "your_username",
+	 "password": "your_password",
+	 "zmserver": "127.0.0.1",
+	 "protocol": "http",
+	 "monitorid": "1",
+	 "name": "Optional name for monitor. Not used in by application."},
+	{"username": "your_other_username",
+	 "password": "your_other_password",
+	 "zmserver": "127.0.0.2",
+	 "protocol": "https",
+	 "monitorid": "5"}
+    ]
+}
